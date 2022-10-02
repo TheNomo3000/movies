@@ -1,0 +1,23 @@
+.home-body {
+  overflow: no;
+  width: 100%;
+  height: 100vh;
+  background-color: #cfcfcf;
+}
+.container {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  box-shadow: 1px 3px 5px 1px rgba(42, 55, 70, 0.4);
+}
+
+.modal-date {
+  max-width: 500px;
+  border-radius: 8px;
+  padding: 24px;
+  background-color: #f7f7f7;
+  box-shadow: 0 30px 60px 0 rgba(42, 55, 70, 0.4);
+}

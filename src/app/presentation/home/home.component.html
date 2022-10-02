@@ -1,0 +1,24 @@
+<div class="home-body">
+  <div class="container is-fluid">
+    <div class="modal-date">
+      <div class="is-flex is-justify-content-center mb-4">
+        <figure class="image is-128x128 ">
+          <img class="is-rounded" src="assets/movie-logo.png" alt="movie icon">
+        </figure>
+      </div>
+      <div class="field is-vertical">
+        <div class="field-label">
+          <label class="label">Fecha de Nacimiento</label>
+        </div>
+        <div class="field-body">
+          <div class="field">
+            <p class="control">
+              <input [(ngModel)]="birthdate" class="input" type="date">
+            </p>
+          </div>
+        </div>
+      </div>
+      <button class="button is-fullwidth is-primary" (click)="confirmBirthdate()">Acceder</button>
+    </div>
+  </div>
+</div>
