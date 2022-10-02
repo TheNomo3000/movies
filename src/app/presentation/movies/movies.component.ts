@@ -72,7 +72,7 @@ export class MoviesComponent implements OnInit, OnDestroy {
   onScrollDown(): void {
     this.isLoading = true;
     this.getMovies(this.nextPage)
-      .pipe(delay(500))
+      .pipe(delay(1500))
       .subscribe({
         next: (response: PaginationModel<MovieModel[]>) => this.setMovieData(response)
       });
