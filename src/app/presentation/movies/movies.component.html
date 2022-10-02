@@ -1,16 +1,21 @@
-<section class="card-container">
-  <div class="card" *ngFor="let movie of movies">
-    <div class="card-image">
-      <figure class="image is-4by5">
-        <img [src]="'https://www.themoviedb.org/t/p/w440_and_h660_face/' + movie.poster" alt="Placeholder image">
-      </figure>
-    </div>
-    <div class="card-content p-3 m-0">
-      <div class="content">
+<app-header></app-header>
+<section class="card-container" infiniteScroll (scrolled)="onScrollDown()">
+  <div class="box" *ngFor="let movie of movies">
+    <figure class="image is-4by5">
+      <img [src]="'https://www.themoviedb.org/t/p/w440_and_h660_face' + movie.poster" alt="Placeholder image">
+      <div class="average-container">
+        {{ movie.voteAverage }}
+      </div>
+    </figure>
+    <div class="content px-2">
+      <div class="content-text">
         <p class="title is-6">{{ movie.title }}</p>
-        <p class="subtitle is-7 pt-2">01/12/1995</p>
+        <p class="subtitle is-7 pt-2">{{ movie.releaseDate | date: 'dd MMM YYYY' }}</p>
       </div>
     </div>
   </div>
-
 </section>
+
+<div class="container">
+  <progress class="progress mb-4 is-dark" max="100"></progress>
+</div>

@@ -5,7 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { MovieRepository } from './domain/repositories/movie.repository';
-import { TheMovieDbRepository } from './infrastructure/the-movie-db/the-movie-db.repository';
+import { TheMovieDbRepository } from './infrastructure/the-movie-db/tmdb.repository';
 
 @NgModule({
   declarations: [

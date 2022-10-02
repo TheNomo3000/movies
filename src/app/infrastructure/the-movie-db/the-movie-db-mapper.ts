@@ -35,7 +35,9 @@ export class TheMovieDbRepositoryMapper implements Mapper<TheMovieDbEntity, Movi
     return {
       poster: param.poster_path,
       title: param.title,
-      description: param.overview
+      description: param.overview,
+      releaseDate: param.release_date,
+      voteAverage: param.vote_average
     };
   }
 
@@ -44,7 +46,7 @@ export class TheMovieDbRepositoryMapper implements Mapper<TheMovieDbEntity, Movi
       poster_path: param.poster,
       adult: false,
       overview: param.description,
-      release_date: "",
+      release_date: param.releaseDate,
       id: 0,
       original_title: "",
       original_language: "",
@@ -53,7 +55,7 @@ export class TheMovieDbRepositoryMapper implements Mapper<TheMovieDbEntity, Movi
       popularity: 0,
       vote_count: 0,
       video: false,
-      votaverage: 0,
+      vote_average: param.voteAverage,
     };
   }
 }

@@ -1,1 +1,20 @@
-<p>header works!</p>
+<!-- <div class="navbar-menu px-5 py-2">
+  <div class="navbar-brand is-align-items-center">
+
+  </div>
+  <div class="navbar-end">
+
+  </div>
+</div> -->
+<nav class="navbar is-flex is-align-items-center is-justify-content-space-between">
+  <div class="navbar-brand">
+    <a class="navbar-item" [routerLink]="['/home']" routerLinkActive="router-link-active">
+      <img src="assets/movie-logo.png" alt="movie logo">
+    </a>
+  </div>
+  <button class="button mr-2" (click)="closeSession()">
+    <span class="icon is-small">
+      <i class="fa-solid fa-right-from-bracket"></i>
+    </span>
+  </button>
+</nav>

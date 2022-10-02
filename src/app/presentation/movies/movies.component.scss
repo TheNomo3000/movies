@@ -3,13 +3,42 @@
   padding: 1rem;
   grid-template-columns: repeat(auto-fit, minmax(182px, 1fr));
   grid-gap: 1rem;
+  justify-items: center;
 }
-.card {
+.box {
   display: grid;
-  height: 372px;
-}
-
-.card {
+  height: 100%;
+  max-height: 372px;
+  max-width: 183px;
+  padding: 0;
+  width: 100%;
   box-shadow: 0px 1px 5px #555;
   background-color: white;
+  .image {
+    max-height: 240px;
+    position: relative;
+    img {
+      border-radius: 6px 6px 0 0;
+    }
+  }
+}
+.content-text {
+  padding-top: 35px;
+}
+.average-container {
+  background-color: black;
+  width: 50px;
+  height: 50px;
+  padding: 2px;
+  bottom: -25px;
+  left: 15px;
+  position: absolute;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  font-weight: bold;
+  box-shadow: 0px 0px 0px 5px green;
 }

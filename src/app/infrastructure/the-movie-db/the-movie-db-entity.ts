@@ -18,5 +18,5 @@ export interface TheMovieDbEntity {
   popularity: number,
   vote_count: number,
   video: boolean,
-  votaverage: number,
+  vote_average: number,
 }
